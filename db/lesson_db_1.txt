@@ -1,4 +1,7 @@
-utf general ci
+utf general ci - выбираем такую кодировку
+
+http://phpfaq.ru/pdo
+
 
 
 user - root
@@ -16,7 +19,7 @@ PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,   -  обработка 
 
 
 require_once - не продолжает
-include_once - если файланет, то продолжает выполнение
+include_once - если файла нет, то продолжает выполнение
 
 $stmt (statement)
 

@@ -1,8 +1,6 @@
 <?php
-//db for tasks
-
  $host = '127.0.0.1';
-    $db   = 'users';
+    $db   = 'users_data_base';
     $user = 'root';
     $pass = '';
     $charset = 'utf8';
