@@ -53,12 +53,16 @@
 
 // print_r($result);
 
+  
+
+// 
+
 
 
 
 
 $connect = array(
-    'wsdl'    => 'http://api.rossko.ru/service/GetOrders',
+    'wsdl'    => 'http://api.rossko.ru/service/GetCheckoutDetails',
     'options' => array(
         'connection_timeout' => 1,
         'trace' => true
@@ -67,22 +71,13 @@ $connect = array(
 
 $param = array(
     'KEY1' => 'bb863005b6468e8ceffec6febeee4c84',
-    'KEY2' => '614ef5b7b2bca40dd231c4dc2c79283d',
-    'ORDER_IDS' => array(
-         array(
-            'id' => 1234567
-        ),
-         array(
-            'id' => 1234568
-        )
-    )
+    'KEY2' => '614ef5b7b2bca40dd231c4dc2c79283d'
 );
 
 $query  = new SoapClient($connect['wsdl'], $connect['options']);
-$result = $query->GetOrders($param);
+$result = $query->GetCheckoutDetails($param);
 
 print_r($result);
-
 
 
 
