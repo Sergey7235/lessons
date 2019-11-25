@@ -1,7 +1,5 @@
 <?php
-
 require_once 'db.php';
-
 
 
 $name_auth = $_POST['name_auth'];
@@ -15,8 +13,9 @@ $res = $stmt->fetch();
 
 
 if ($res) {
-	echo "string <br>";
-	print_r($res);
+	echo "авторизация прошла успешно! <br>";
+	//print_r($res);
+	
 }
 
 
