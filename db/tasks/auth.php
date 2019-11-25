@@ -1,8 +1,10 @@
 <?php
+<<<<<<< HEAD
 session_start();
 
+=======
+>>>>>>> b054d48003556f67661c7fcddddf2f63194bd15e
 require_once 'db.php';
-
 
 
 $name_auth = $_POST['name_auth'];
@@ -15,6 +17,7 @@ $stmt = $pdo->query("SELECT * FROM users WHERE login = '{$_POST['login_auth']}' 
 $res = $stmt->fetch();
 
 
+<<<<<<< HEAD
 if (($res['login'] == $login_auth) && ($res['password'] == $password_auth) && ($res['login'] != null ) && ($res['password'] != null )) {
 	
 	echo "Авторизация пройдена успешно!<br><br>"; 
@@ -25,6 +28,13 @@ if (($res['login'] == $login_auth) && ($res['password'] == $password_auth) && ($
 	
 	echo '<meta http-equiv="refresh" content="3;URL=//localhost/lessons/db/tasks/secret_page.php">';
 
+=======
+if ($res) {
+	echo "авторизация прошла успешно! <br>";
+	//print_r($res);
+	
+}
+>>>>>>> b054d48003556f67661c7fcddddf2f63194bd15e
 
 }
 
