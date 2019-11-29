@@ -1,0 +1,17 @@
+
+
+
+.htacsess
+
+
+redirect /test
+redirectMatch - работает с регулярками
+
+
+
+
+rewriteEngine on
+RewriteRule ^(.*)$ test.php
+
+
+$_SERVER - находятся все данные о запросе на сервер
