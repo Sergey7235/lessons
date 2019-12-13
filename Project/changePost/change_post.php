@@ -12,7 +12,7 @@ function changePost($text, $title, $post_id, $pdo)
 {
 
 $query = $pdo->query("UPDATE posts SET title = '$title', text = '$text' WHERE id = $post_id" );
-//header("Location: ../posts/posts.php");
+header("Location: ../templates/temp_home.php");
 
 }
 
