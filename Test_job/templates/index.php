@@ -14,7 +14,7 @@
 	<div id="wrapper">
 		<header>
 			<a href="/"><img src="../images/logo.png" alt="World Bank Publications"></a>		
-			<a href="/"><img src="../images/tel_header.png" alt="8-800-100-505" align="right" vspace="25"></a>
+			<a href="/"><img src="../images/tel_header.png" alt="8-800-100-5005" align="right" vspace="25"></a>
 		</header>
 
 		<nav>

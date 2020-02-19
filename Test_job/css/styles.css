@@ -96,7 +96,7 @@ footer a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 69px;
+  padding: 14px 39px;
   text-decoration: none;
   font: 14px 'Arial', sans-serif;	
 }
@@ -110,3 +110,13 @@ footer a {
   background-color: #eb5017;
   color: white;
 }
+
+
+form {
+    width:50%;
+    
+    background:#F0F8FF;
+   }
+select {
+    width: 100px;   
+    }
